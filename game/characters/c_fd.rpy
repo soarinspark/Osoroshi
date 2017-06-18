@@ -3,3 +3,5 @@
 init:
 
    define c_frank = Character("Frank Duggan")
+   
+   image frank neutral = "ch_frank_neutral.png"

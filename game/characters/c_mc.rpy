@@ -3,3 +3,5 @@
 init:
 
    define c_meiko = Character("Meiko Chiba")
+   
+   image meiko angry = "ch_meiko_angry.png"

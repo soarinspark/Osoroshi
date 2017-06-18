@@ -2,14 +2,10 @@
 
 label start:
 
+    scene white
+
     jump elsewhere
    
 label begone:
-   
-    c_meiko "GUYS."
-   
-    c_meiko "MAKE A GAME ABOUT ME."
-
-    # This ends the game.
 
     return
