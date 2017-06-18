@@ -2,14 +2,14 @@
 
 label start:
 
-   jump elsewhere
+    jump elsewhere
    
 label begone:
    
-   c_mc "GUYS."
+    c_mc "GUYS."
    
-   c_mc "MAKE A GAME ABOUT ME."
+    c_mc "MAKE A GAME ABOUT ME."
 
-   # This ends the game.
+    # This ends the game.
 
-   return
+    return
