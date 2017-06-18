@@ -6,9 +6,9 @@ label start:
    
 label begone:
    
-    c_mc "GUYS."
+    c_meiko "GUYS."
    
-    c_mc "MAKE A GAME ABOUT ME."
+    c_meiko "MAKE A GAME ABOUT ME."
 
     # This ends the game.
 
