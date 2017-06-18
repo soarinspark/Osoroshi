@@ -11,3 +11,7 @@ The game folder contains everything you probably need to worry about. script.rpy
 ## A NOTE ABOUT SPACING
 
 Because Ren'Py is based on Python, it has somewhat annoying requirements as to how you put spacing in lines of code. Make sure that you don't put any tab characters into any of the .rpy files, and also make sure that all lines that SHOULD have the same amount of indentation, do.
+
+## Hey, can I change the styling?
+
+NO! Not right now, anyway. Ren'Py uses a GUI editor for that, which is all well and good, but it means that any merge conflicts related to styling would be quite difficult to resolve.
