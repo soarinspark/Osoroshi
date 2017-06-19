@@ -2,6 +2,6 @@
 
 init:
 
-   define c_frank = Character("Tim Egenton")
+   define c_tim = Character("Tim Egenton")
    
-   image frank neutral = "ch_tim_neutral.png"
+   image tim neutral = "ch_tim_neutral.png"
