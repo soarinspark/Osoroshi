@@ -1,6 +1,6 @@
 label elsewhere:
     show frank neutral:
-	align (0.52, 1.0)
+        align (0.52, 1.0)
     c_frank "I went elsewhere!"
     c_frank "As in, this scene is found in another file."
     c_frank "It's called external.rpy and it's in the \"scenes\" folder!"
