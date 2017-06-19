@@ -37,6 +37,6 @@ label elsewhere:
         align (0.35, 1.0)
         
     c_meiko "GUYS."
-    c_meiko "MAKE A GAME ABOUT ME."
+    c_meiko "STOP FUCKING AROUND AND FINISH MAKING A GAME ABOUT ME."
     
     jump begone
