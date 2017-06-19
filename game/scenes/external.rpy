@@ -14,9 +14,11 @@ label elsewhere:
     c_mike "I exist now!"
     show joey neutral:
          align (0.5, 1.0)
-    with move
+    with moveinleft
+    with vpunch
     c_joey "Im the best boy obviously"
-    
+    hide joey
+    with moveoutright
     show shaun neutral:
         align (0.25, 1.0)
     show frank neutral:
@@ -29,7 +31,6 @@ label elsewhere:
     hide shaun
     hide mike
     hide frank
-    hide joey
     with moveoutright
     
     show meiko angry:
