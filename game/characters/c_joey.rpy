@@ -2,6 +2,6 @@
 
 init:
 
-   define c_joey = Character("Joey Margaritondo")
+   define c_joey = Character("Josepher")
    
    image joey neutral = "ch_joey_neutral.png"
