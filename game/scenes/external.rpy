@@ -15,6 +15,7 @@ label elsewhere:
     show joey neutral:
          align (0.5, 1.0)
     with moveinleft
+    with vpunch
     c_joey "Im the best boy obviously"
     hide joey
     with moveoutright
