@@ -12,13 +12,20 @@ label elsewhere:
         align (0.5, 1.0)
     with move
     c_mike "I exist now!"
-    hide mike
-    hide frank
     
     show shaun neutral:
-        align (0.5, 1.0)
+        align (0.25, 1.0)
+    show frank neutral:
+        align (0.95, 1.0)
+    show mike neutral:
+        align (0.6, 1.0)
+    with move
     c_shaun "Me too!"
+    
     hide shaun
+    hide mike
+    hide frank
+    with moveoutright
     
     show meiko angry:
         align (0.35, 1.0)
