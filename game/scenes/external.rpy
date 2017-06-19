@@ -10,28 +10,36 @@ label elsewhere:
         align (0.85, 1.0)
     show mike neutral:
         align (0.5, 1.0)
-    with move
+        with move
     c_mike "I exist now!"
     show joey neutral:
          align (0.5, 1.0)
-    with moveinleft
-    with vpunch
-    c_joey "Im the best boy obviously"
+        with moveinleft
+        with vpunch
+    c_joey "Im the worst boy obviously"
     hide joey
-    with moveoutright
+        with moveoutright
     show shaun neutral:
         align (0.25, 1.0)
     show frank neutral:
         align (0.95, 1.0)
     show mike neutral:
         align (0.6, 1.0)
-    with move
+        with move
     c_shaun "Me too!"
     
     hide shaun
     hide mike
     hide frank
-    with moveoutright
+        with moveoutright
+    show tim
+        align (0.5, 1.0)
+        with moveinleft
+    c_tim "What did I miss?"
+    c_tim "Guys?"
+    c_tim "Hey wait up!"
+    hide tim
+        with moveoutright
     
     show meiko angry:
         align (0.35, 1.0)
