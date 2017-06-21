@@ -7,3 +7,4 @@ game/saves/
 log.txt
 errors.txt
 traceback.txt
+project.json
