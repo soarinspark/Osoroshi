@@ -1,4 +1,7 @@
+define jo = Character(_("Joey Margaritondo"), color="#961818")
+
 label elsewhere:
+
     show frank neutral:
         align (0.52, 1.0)
     c_frank "I went elsewhere!"
@@ -16,7 +19,7 @@ label elsewhere:
         align (0.5, 1.0)
     with moveinleft
     with vpunch
-    c_joey "Im the best boy obviously"
+    jo "Im the best boy obviously"
     hide joey
     with moveoutright
     show shaun neutral:
