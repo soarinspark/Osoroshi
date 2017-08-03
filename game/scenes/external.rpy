@@ -44,6 +44,9 @@ label elsewhere:
         "Shaun":
             jump shaun
             
+        "Tim":
+            jump tim
+            
         "Dr. McNamara":
             jump bigmac
             
@@ -56,9 +59,6 @@ label elsewhere:
             align (0.5, 1.0)
         with moveinleft
         c_joey "I'm sorry, what did you just say?"
-        jump sin
-    
-    label sin:
         menu:
             "I said McNamara, bitch":
                 jump badchoice
@@ -90,6 +90,16 @@ label elsewhere:
         c_shaun "Oh hey thanks. Don't I look hot in this maid outfit?"
         jump afterchoice
             
+    label tim:
+        hide frank
+        hide mike
+        hide shaun
+        with moveoutright
+        show tim neutral:
+            align (0.5, 1.0)
+        with moveinright
+        c_tim "Joey is bad at organizing code"
+        jump afterchoice
             
     label mike:
         hide shaun
