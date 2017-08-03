@@ -47,6 +47,12 @@ label elsewhere:
         "Tim":
             jump tim
             
+        "Dominick":
+            jump dom
+            
+        "Dan":
+            jump dan
+        
         "Dr. McNamara":
             jump bigmac
         
@@ -105,7 +111,29 @@ label elsewhere:
         with moveinright
         c_tim "Joey is bad at organizing code"
         jump afterchoice
-            
+    
+    label dom:
+        hide frank
+        hide mike
+        hide shaun
+        with moveoutright
+        show dom neutral:
+            align (0.5, 1.0)
+        with moveinleft
+        c_dom "I mean, yeah. Obviously."
+        jump afterchoice
+
+    label dan:
+        hide frank
+        hide mike
+        hide shaun
+        with moveoutright
+        show dan neutral:
+            align (0.5, 1.0)
+        with moveinleft
+        c_dan "It's because I'm so sexy, right?"
+        jump afterchoice
+        
     label bigmac:
         hide frank
         hide mike
@@ -140,6 +168,8 @@ label elsewhere:
     hide mike
     hide frank
     hide joey
+    hide dom
+    hide dan
     with moveoutright
     show tim neutral: #this looks awkward with tim already onscreen, someone suggest a fix pls
         align (0.5, 1.0)
