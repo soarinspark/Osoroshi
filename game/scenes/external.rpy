@@ -49,37 +49,42 @@ label elsewhere:
             
         "Dr. McNamara":
             jump bigmac
-            
-    label bigmac:
-        hide frank
+        
+    label frank:
+        
         hide mike
         hide shaun
         with moveoutright
-        show joey neutral:
+        show frank neutral:
             align (0.5, 1.0)
-        with moveinleft
-        c_joey "I'm sorry, what did you just say?"
-        menu:
-            "I said McNamara, bitch":
-                jump badchoice
-            
-            "I didn't say anything.":
-                jump repentance
-                
-                
-    label repentance:
-        show joey neutral:
-            align (0.5, 1.0)
-        c_joey "Oh, okay. Good."
+        c_frank "Hey thanks!"
         jump afterchoice
     
-    label badchoice:
-        show joey angry:
+    label joey:
+        hide mike
+        hide shaun
+        hide frank
+        with moveoutright
+        show joey neutral:
             align (0.5, 1.0)
-        c_joey "Please don't say that. Ever again. Please. You're a bad person."
-        c_joey "I'm going to go now. Because you're a bad person."
+        with moveinright
+        
+        c_joey "You heard it here folks, I'm the best boy!"
+        
         jump afterchoice
             
+    label mike:
+        hide shaun
+        hide frank
+        with moveoutright
+        show mike neutral:
+            align (0.5, 1.0)
+        with moveinright
+        
+        c_mike "Oh yeah! That's right BAYBEEEEE"
+        
+        jump afterchoice
+
     label shaun:
         hide frank
         hide mike
@@ -101,40 +106,33 @@ label elsewhere:
         c_tim "Joey is bad at organizing code"
         jump afterchoice
             
-    label mike:
-        hide shaun
+    label bigmac:
         hide frank
-        with moveoutright
-        show mike neutral:
-            align (0.5, 1.0)
-        with moveinright
-        
-        c_mike "Oh yeah! That's right BAYBEEEEE"
-        
-        jump afterchoice
-            
-    label joey:
-    
         hide mike
         hide shaun
-        hide frank
         with moveoutright
         show joey neutral:
             align (0.5, 1.0)
-        with moveinright
-        
-        c_joey "You heard it here folks, I'm the best boy!"
-        
-        jump afterchoice
+        with moveinleft
+        c_joey "I'm sorry, what did you just say?"
+        menu:
+            "I said McNamara, bitch":
+                jump badchoice
             
-    label frank:
-        
-        hide mike
-        hide shaun
-        with moveoutright
-        show frank neutral:
+            "I didn't say anything.":
+                jump repentance
+                
+    label badchoice:
+        show joey angry:
             align (0.5, 1.0)
-        c_frank "Hey thanks!"
+        c_joey "Please don't say that. Ever again. Please. You're a bad person."
+        c_joey "I'm going to go now. Because you're a bad person."
+        jump afterchoice
+        
+    label repentance:
+        show joey neutral:
+            align (0.5, 1.0)
+        c_joey "Oh, okay. Good."
         jump afterchoice
     
     label afterchoice:
@@ -143,7 +141,7 @@ label elsewhere:
     hide frank
     hide joey
     with moveoutright
-    show tim neutral:
+    show tim neutral: #this looks awkward with tim already onscreen, someone suggest a fix pls
         align (0.5, 1.0)
     with moveinleft
     c_tim "Hey guys!"
