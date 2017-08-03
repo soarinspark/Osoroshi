@@ -2,6 +2,6 @@
 
 init:
 
-   define c_Dan = Character("Dan McMahon")
+   define c_dan = Character("Dan McMahon")
    
    image dan neutral = "ch_dan_neutral.png"

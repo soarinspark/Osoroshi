@@ -2,6 +2,6 @@
 
 init:
 
-   define c_dom = Character("Dominick Vapspa")
+   define c_dom = Character("Dominick Vapsva")
    
    image dom neutral = "ch_dom_neutral.png"
