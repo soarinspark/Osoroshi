@@ -53,6 +53,9 @@ label elsewhere:
         "Dan":
             jump dan
         
+        "Damien":
+            jump damien
+        
         "Dr. McNamara":
             jump bigmac
         
@@ -98,7 +101,7 @@ label elsewhere:
         show shaun neutral:
             align (0.5, 1.0)
         with moveinright
-        c_shaun "Oh hey thanks. Don't I look hot in this maid outfit?"
+        c_shaun "No, you're the best boy ;)"
         jump afterchoice
             
     label tim:
@@ -132,6 +135,17 @@ label elsewhere:
             align (0.5, 1.0)
         with moveinleft
         c_dan "It's because I'm so sexy, right?"
+        jump afterchoice
+        
+    label damien:
+        hide frank
+        hide mike
+        hide shaun
+        with moveoutright
+        show damien neutral:
+            align (0.5, 1.0)
+        with moveinleft
+        c_damien "You have great taste, fuckin faggot"
         jump afterchoice
         
     label bigmac:
@@ -170,6 +184,7 @@ label elsewhere:
     hide joey
     hide dom
     hide dan
+    hide damien
     with moveoutright
     show tim neutral: #this looks awkward with tim already onscreen, someone suggest a fix pls
         align (0.5, 1.0)
