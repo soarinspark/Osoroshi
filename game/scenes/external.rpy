@@ -1,4 +1,9 @@
+init:
+    image testbackground = "my name jeff.jpg"
+
 label elsewhere:
+    
+    scene testbackground
 
     show frank neutral:
         align (0.52, 1.0)
@@ -90,7 +95,7 @@ label elsewhere:
             align (0.5, 1.0)
         with moveinright
         
-        c_mike "Oh no. Fuck you. Change it."
+        c_mike "I don't usually appreciate being lied to, but it was a nice gesture."
         
         jump afterchoice
 
