@@ -87,7 +87,7 @@ label elsewhere:
             align (0.5, 1.0)
         with moveinright
         
-        c_mike "Oh yeah! That's right BAYBEEEEE"
+        c_mike "Oh no. Fuck you. Change it."
         
         jump afterchoice
 
