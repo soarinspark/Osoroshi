@@ -6,7 +6,7 @@ label elsewhere:
     scene testbackground
 
     show frank neutral:
-        align (0.52, 1.0)
+        align (0.5, 1.0)
     c_frank "I went elsewhere!"
     c_frank "As in, this scene is found in another file."
     c_frank "It's called external.rpy and it's in the \"scenes\" folder!"
@@ -84,9 +84,28 @@ label elsewhere:
         with moveinright
         
         c_joey "You heard it here folks, I'm the best boy!"
+        c_joey "Hey, I have a question for you."
+        c_joey "So I could probably either get a Switch..."
+        c_joey "Or I could get the Destiny 2 Collectors Edition. It comes with a really cool bag!"
+        c_joey "What do you think I should get?"
+        
+        menu:
+            "Really cool bag":
+                jump bag
+            
+            "Switch, you fucking troglodyte":
+                jump switch
+                
+    label bag:
+        c_joey "Yeah, alright! Bags are cool!"
         
         jump afterchoice
-            
+    
+    label switch:
+        c_joey "Yeah, a Switch is better probably."
+        
+        jump afterchoice
+        
     label mike:
         hide shaun
         hide frank
